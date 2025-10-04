@@ -7,6 +7,8 @@ const brands = [
   { name: 'Tata Motors', logo: '/tata jpg.png' },
   { name: 'TVS Motors', logo: '/tvs motors.jpg' },
   { name: 'Yamaha', logo: '/yamaha.jpg' },
+  { name: 'Amazon', logo: '/amazon-logo-amazon-icon-free-free-vector.jpg' },
+  { name: 'Flipkart', logo: '/Flipkart-Logo-2015-present.jpg' },
 ];
 
 export default function TrustedBrands() {
@@ -29,7 +31,7 @@ export default function TrustedBrands() {
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 border-2 border-slate-200 hover:border-blue-300 flex items-center justify-center h-28"
+              className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 border-2 border-slate-200 hover:border-blue-300 flex items-center justify-center h-40"
             >
               <img
                 src={brand.logo}
