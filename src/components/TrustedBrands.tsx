@@ -4,6 +4,9 @@ const brands = [
   { name: 'First Abu Dhabi Bank', logo: '/dubai.png' },
   { name: 'Minto Bay', logo: '/minto bay.png' },
   { name: 'Myntra', logo: '/myntra.jpg' },
+  { name: 'Tata Motors', logo: '/tata jpg.png' },
+  { name: 'TVS Motors', logo: '/tvs motors.jpg' },
+  { name: 'Yamaha', logo: '/yamaha.jpg' },
 ];
 
 export default function TrustedBrands() {
@@ -31,7 +34,7 @@ export default function TrustedBrands() {
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100"
+                className="max-w-full max-h-full object-contain transition-all duration-300"
               />
             </div>
           ))}
