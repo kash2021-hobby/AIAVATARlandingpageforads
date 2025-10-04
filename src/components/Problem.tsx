@@ -139,6 +139,45 @@ export default function Problem() {
           </div>
         </div>
 
+        <div className="mb-24 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative group order-2 lg:order-1">
+              <div className="absolute -inset-1 bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
+              <div className="relative bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 rounded-3xl p-[3px] shadow-2xl">
+                <div className="bg-white rounded-[22px] p-8">
+                  <div className="aspect-video bg-gradient-to-br from-green-50 via-emerald-50 to-green-100 rounded-2xl flex items-center justify-center relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-green-500/10 via-transparent to-emerald-500/10"></div>
+                    <div className="text-center relative z-10">
+                      <div className="w-28 h-28 bg-gradient-to-br from-green-600 via-emerald-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-500 cursor-pointer shadow-2xl hover:shadow-green-500/50">
+                        <Play size={40} className="text-white ml-1" />
+                      </div>
+                      <p className="text-slate-800 font-bold text-xl">Regional Language Demo</p>
+                      <p className="text-slate-500 text-sm mt-2">Content in your language</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-8 order-1 lg:order-2">
+              <div className="group bg-gradient-to-br from-white to-green-50/50 rounded-3xl p-10 border-2 border-green-200 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <Play size={28} className="text-white" />
+                </div>
+                <h3 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 tracking-tight">
+                  Facing Problem in Making Content in Regional Language?
+                </h3>
+                <p className="text-xl text-slate-700 leading-relaxed mb-5 font-medium">
+                  Creating content in regional languages can be challenging and expensive. Finding native speakers, managing translations, and ensuring authenticity takes time and resources.
+                </p>
+                <p className="text-lg text-slate-600 leading-relaxed">
+                  With our AI Avatars, create authentic content in your native language effortlessly. From Marathi, Kannada, and Telugu to Bengali and beyond, we support all major Indian regional languages. Reach your local audience with content that truly connects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="mt-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 rounded-3xl p-10 sm:p-16 shadow-2xl relative overflow-hidden z-10">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-cyan-500/20 to-blue-600/20 animate-gradient-slow"></div>
           <div className="text-center max-w-3xl mx-auto relative z-10">
