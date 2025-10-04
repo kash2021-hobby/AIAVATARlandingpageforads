@@ -80,6 +80,53 @@ export default function Demo() {
             </button>
           </div>
         </div>
+
+        <div className="mt-32 relative z-10">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tight">
+              Our{' '}
+              <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-clip-text text-transparent">
+                AI Avatar Showcase
+              </span>
+            </h3>
+            <p className="text-xl sm:text-2xl text-slate-700 max-w-3xl mx-auto font-medium leading-relaxed">
+              Watch real examples of AI Avatars in action across different industries and use cases
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { title: 'E-Commerce Product Demo', category: 'Retail', gradient: 'from-blue-500 to-cyan-500' },
+              { title: 'Educational Tutorial', category: 'Education', gradient: 'from-purple-500 to-pink-500' },
+              { title: 'Real Estate Tour', category: 'Real Estate', gradient: 'from-orange-500 to-red-500' },
+              { title: 'Healthcare Information', category: 'Healthcare', gradient: 'from-green-500 to-emerald-500' },
+              { title: 'Financial Services', category: 'Finance', gradient: 'from-yellow-500 to-orange-500' },
+              { title: 'Travel & Tourism', category: 'Travel', gradient: 'from-cyan-500 to-blue-500' },
+            ].map((video, index) => (
+              <div key={index} className="group relative">
+                <div className={`absolute -inset-1 bg-gradient-to-r ${video.gradient} rounded-3xl blur-lg opacity-50 group-hover:opacity-80 transition duration-500`}></div>
+                <div className={`relative bg-gradient-to-r ${video.gradient} rounded-3xl p-[2px] shadow-xl`}>
+                  <div className="bg-white rounded-[22px] overflow-hidden">
+                    <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-tr from-black/5 via-transparent to-black/5"></div>
+                      <button className="w-20 h-20 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-xl relative z-10 group-hover:shadow-2xl">
+                        <Play size={32} className={`bg-gradient-to-r ${video.gradient} bg-clip-text text-transparent ml-1`} />
+                      </button>
+                    </div>
+                    <div className="p-6 bg-white">
+                      <div className={`inline-block bg-gradient-to-r ${video.gradient} text-white px-4 py-1 rounded-full text-xs font-bold mb-3`}>
+                        {video.category}
+                      </div>
+                      <h4 className="text-xl font-black text-slate-900 tracking-tight">
+                        {video.title}
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <style>{`
