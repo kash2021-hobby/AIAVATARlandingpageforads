@@ -5,7 +5,6 @@ import Problem from './components/Problem';
 import Features from './components/Features';
 import UseCases from './components/UseCases';
 import Demo from './components/Demo';
-import TrustedWorldwide from './components/TrustedWorldwide';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 
@@ -19,7 +18,6 @@ function App() {
       <TrustedBrands />
       <UseCases />
       <Demo />
-      <TrustedWorldwide />
       <CTA />
       <Footer />
     </div>
