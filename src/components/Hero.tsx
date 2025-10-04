@@ -27,11 +27,11 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="group bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 font-bold text-lg flex items-center gap-2 w-full sm:w-auto justify-center relative overflow-hidden">
+            <a href="#contact-form" className="group bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 font-bold text-lg flex items-center gap-2 w-full sm:w-auto justify-center relative overflow-hidden">
               <span className="relative z-10">Start Free Trial</span>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform relative z-10" />
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            </button>
+            </a>
             <button className="group border-3 border-blue-600 text-blue-700 bg-white px-8 py-4 rounded-xl hover:bg-blue-50 hover:shadow-xl hover:scale-105 transition-all duration-300 font-bold text-lg flex items-center gap-2 w-full sm:w-auto justify-center">
               <Play size={20} className="group-hover:scale-110 transition-transform" />
               Watch Demo

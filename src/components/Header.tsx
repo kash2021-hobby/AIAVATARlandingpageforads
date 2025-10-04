@@ -22,9 +22,9 @@ export default function Header() {
             <a href="#demo" className="text-gray-700 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-500 hover:bg-clip-text font-medium transition-all">
               Demo
             </a>
-            <button className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-2 rounded-lg hover:shadow-lg hover:scale-105 transition-all font-semibold">
+            <a href="#contact-form" className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-2 rounded-lg hover:shadow-lg hover:scale-105 transition-all font-semibold">
               Get Started
-            </button>
+            </a>
           </div>
 
           <button
@@ -48,9 +48,9 @@ export default function Header() {
               <a href="#demo" className="text-gray-700 hover:text-gray-900 font-medium">
                 Demo
               </a>
-              <button className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all font-semibold text-left">
+              <a href="#contact-form" className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all font-semibold text-left block">
                 Get Started
-              </button>
+              </a>
             </div>
           </div>
         )}
