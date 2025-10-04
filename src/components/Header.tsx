@@ -17,7 +17,7 @@ export default function Header() {
             <a href="#features" className="text-gray-700 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-600 hover:bg-clip-text font-medium transition-all">
               Features
             </a>
-            <a href="#use-cases" className="text-gray-700 hover:text-transparent hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-600 hover:bg-clip-text font-medium transition-all">
+            <a href="#showcase" className="text-gray-700 hover:text-transparent hover:bg-gradient-to-r hover:from-cyan-600 hover:to-blue-600 hover:bg-clip-text font-medium transition-all">
               Use Cases
             </a>
             <a href="#demo" className="text-gray-700 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-500 hover:bg-clip-text font-medium transition-all">
@@ -43,7 +43,7 @@ export default function Header() {
               <a href="#features" className="text-gray-700 hover:text-gray-900 font-medium">
                 Features
               </a>
-              <a href="#use-cases" className="text-gray-700 hover:text-gray-900 font-medium">
+              <a href="#showcase" className="text-gray-700 hover:text-gray-900 font-medium">
                 Use Cases
               </a>
               <a href="#demo" className="text-gray-700 hover:text-gray-900 font-medium">

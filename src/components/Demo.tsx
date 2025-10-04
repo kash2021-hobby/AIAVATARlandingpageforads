@@ -81,7 +81,7 @@ export default function Demo() {
           </div>
         </div>
 
-        <div className="mt-32 relative z-10">
+        <div id="showcase" className="mt-32 relative z-10">
           <div className="text-center mb-16">
             <h3 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tight">
               Our{' '}
