@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-white text-xl font-bold mb-4">AI Avatar Studio</h3>
+            <h3 className="text-white text-xl font-bold mb-4">LTAB AI</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Creating the future of digital interaction with AI-powered avatars.
             </p>
@@ -52,7 +52,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
           <p className="text-gray-400">
-            © 2025 AI Avatar Studio. All rights reserved.
+            © 2025 LTAB AI. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
