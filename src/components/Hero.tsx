@@ -9,22 +9,21 @@ export default function Hero() {
         <div className="text-center max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-3 rounded-full text-sm font-semibold mb-6 animate-bounce shadow-lg">
             <Sparkles size={18} />
-            <span>Revolutionary AI Technology</span>
+            <span>The Future of Content Creation</span>
             <Zap size={18} />
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent">
-              Transform Your Business with{' '}
+              Create Professional Content{' '}
             </span>
             <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700 bg-clip-text text-transparent animate-gradient">
-              AI-Powered Avatars
+              Without Cameras or Actors
             </span>
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-700 mb-10 leading-relaxed">
-            Create lifelike, interactive AI avatars that engage customers 24/7, speak 175+ languages,
-            and deliver personalized experiences at scale.
+            Transform your brand with studio-quality videos, engaging social media content, and amazing voiceovers—all at an affordable price using AI Avatars
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

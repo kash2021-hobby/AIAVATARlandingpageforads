@@ -1,45 +1,45 @@
-import { Bot, Globe, Video, Zap, MessageSquare, Users } from 'lucide-react';
+import { Video, Mic, DollarSign, Sparkles, Zap, TrendingUp } from 'lucide-react';
 
 const features = [
   {
-    icon: Bot,
-    title: 'Realistic AI Avatars',
-    description: 'Create photorealistic digital humans with natural movements, expressions, and lip-sync accuracy.',
+    icon: Video,
+    title: 'Studio Quality Videos',
+    description: 'Get professional-grade videos without expensive cameras, lighting, or studio rental. Just type your script and let AI do the rest.',
     gradient: 'from-blue-600 to-cyan-500',
     bgGradient: 'from-blue-100 to-cyan-100',
   },
   {
-    icon: Globe,
-    title: 'Multi-Language Support',
-    description: 'Speak to global audiences with support for 175+ languages and natural accent variations.',
+    icon: Sparkles,
+    title: 'Social Media Content',
+    description: 'Create engaging content for Instagram, YouTube, LinkedIn, and more. Never worry about being camera shy again.',
     gradient: 'from-cyan-500 to-blue-500',
     bgGradient: 'from-cyan-100 to-blue-100',
   },
   {
-    icon: Video,
-    title: 'Video Generation',
-    description: 'Generate high-quality video content at scale without cameras, studios, or actors.',
+    icon: Mic,
+    title: 'Amazing Voiceovers',
+    description: 'Natural-sounding voiceovers in multiple languages and accents. No recording studio needed.',
     gradient: 'from-blue-500 to-cyan-600',
     bgGradient: 'from-blue-100 to-cyan-100',
   },
   {
-    icon: Zap,
-    title: 'Real-Time Interaction',
-    description: 'Enable live conversations with instant responses powered by advanced AI technology.',
+    icon: DollarSign,
+    title: 'Affordable Pricing',
+    description: 'Professional content at a fraction of traditional costs. No actors, no crew, no expensive equipment.',
     gradient: 'from-cyan-600 to-blue-600',
     bgGradient: 'from-cyan-100 to-blue-100',
   },
   {
-    icon: MessageSquare,
-    title: 'Natural Conversations',
-    description: 'AI-powered dialogue that understands context and delivers personalized responses.',
+    icon: Zap,
+    title: 'No Retakes Needed',
+    description: 'Edit your script and regenerate instantly. Save hours of shooting and editing time.',
     gradient: 'from-blue-600 to-cyan-500',
     bgGradient: 'from-blue-100 to-cyan-100',
   },
   {
-    icon: Users,
-    title: 'Custom Personalities',
-    description: 'Define unique personalities, voices, and behaviors to match your brand identity.',
+    icon: TrendingUp,
+    title: 'Build Your Brand',
+    description: 'Consistent, professional content helps you establish authority and grow your audience rapidly.',
     gradient: 'from-cyan-500 to-blue-700',
     bgGradient: 'from-cyan-100 to-blue-100',
   },
@@ -50,12 +50,18 @@ export default function Features() {
     <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-blue-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-4">
-            Powerful Features for Every Need
+          <div className="inline-block bg-green-100 text-green-600 px-6 py-2 rounded-full text-sm font-bold mb-6">
+            THE SOLUTION
+          </div>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+            <span className="text-gray-900">How </span>
+            <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">
+              AI Avatars
+            </span>
+            <span className="text-gray-900"> Solve Your Problems</span>
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Everything you need to create, deploy, and scale AI avatar experiences
-            across your business operations.
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            Everything you need to create professional content without the traditional hassles and expenses
           </p>
         </div>
 

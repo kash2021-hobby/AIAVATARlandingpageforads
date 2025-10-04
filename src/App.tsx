@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import TrustedBrands from './components/TrustedBrands';
+import Problem from './components/Problem';
 import Features from './components/Features';
 import UseCases from './components/UseCases';
 import Demo from './components/Demo';
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Hero />
       <TrustedBrands />
+      <Problem />
       <Features />
       <UseCases />
       <Demo />
