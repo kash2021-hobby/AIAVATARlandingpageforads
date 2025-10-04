@@ -2,25 +2,11 @@ import { Clock, DollarSign, MapPin, Video, Play } from 'lucide-react';
 
 const problems = [
   {
-    icon: Clock,
-    title: 'No Time for Shoots',
-    description: 'Busy schedule with no time for filming and endless retakes?',
-    gradient: 'from-amber-500 to-yellow-500',
-    bgGradient: 'from-amber-50 to-yellow-50',
-  },
-  {
     icon: DollarSign,
     title: 'Tight Budget',
     description: 'Professional video production costs are through the roof?',
     gradient: 'from-yellow-500 to-orange-600',
     bgGradient: 'from-yellow-50 to-orange-50',
-  },
-  {
-    icon: MapPin,
-    title: 'No Studio Space',
-    description: "Don't have access to a professional shooting location?",
-    gradient: 'from-orange-600 to-red-500',
-    bgGradient: 'from-orange-50 to-red-50',
   },
   {
     icon: Video,
@@ -86,7 +72,42 @@ export default function Problem() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative group order-2 lg:order-1">
+              <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+              <div className="relative bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 rounded-2xl p-1">
+                <div className="bg-white rounded-xl p-8">
+                  <div className="aspect-video bg-gradient-to-br from-amber-100 via-yellow-100 to-amber-200 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-24 h-24 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 cursor-pointer shadow-2xl">
+                        <Play size={36} className="text-white ml-1" />
+                      </div>
+                      <p className="text-gray-700 font-bold text-lg">AI Avatar Demo Video</p>
+                      <p className="text-gray-500 text-sm mt-2">Video will be added here</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-8 order-1 lg:order-2">
+              <div className="bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-50 rounded-3xl p-8 border-2 border-amber-200">
+                <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                  No Time for Shoots & No Studio Space?
+                </h3>
+                <p className="text-xl text-gray-700 leading-relaxed mb-4">
+                  Busy schedule with no time for filming and endless retakes? Don't have access to a professional shooting location?
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  With AI Avatars, create professional videos anytime, anywhere. No studios, no scheduling conflicts, no location hassles. Just instant, high-quality content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8">
           {problems.map((problem, index) => (
             <div
               key={index}
