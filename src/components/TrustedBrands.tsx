@@ -1,12 +1,3 @@
-import { Building2, Briefcase, Target, Headphones } from 'lucide-react';
-
-const stats = [
-  { icon: Building2, value: '10+', label: 'Leading Brands' },
-  { icon: Briefcase, value: '5+', label: 'Industries' },
-  { icon: Target, value: '98%', label: 'Client Retention' },
-  { icon: Headphones, value: '24/7', label: 'Support' },
-];
-
 const brands = [
   { name: 'Tata Motors', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/2560px-Tata_logo.svg.png' },
   { name: 'Yamaha', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Yamaha_Corporation_logo.svg/2560px-Yamaha_Corporation_logo.svg.png' },
@@ -34,26 +25,6 @@ export default function TrustedBrands() {
           <p className="text-xl sm:text-2xl text-slate-700 max-w-3xl mx-auto font-medium leading-relaxed">
             We've partnered with industry leaders across multiple sectors to deliver exceptional results
           </p>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="group bg-white p-8 rounded-3xl text-center hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-slate-200 hover:border-blue-300 relative overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                  <stat.icon size={28} className="text-white" strokeWidth={2.5} />
-                </div>
-                <div className="text-5xl font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
-                  {stat.value}
-                </div>
-                <div className="text-slate-600 font-bold tracking-wide">{stat.label}</div>
-              </div>
-            </div>
-          ))}
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
