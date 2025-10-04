@@ -6,7 +6,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-white text-xl font-bold mb-4">LTAB AI</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/ltabai logo.jpg" alt="LTAB AI Logo" className="h-10 w-10 object-contain" />
+              <h3 className="text-white text-xl font-bold">LTAB AI</h3>
+            </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Creating the future of digital interaction with AI-powered avatars.
             </p>
