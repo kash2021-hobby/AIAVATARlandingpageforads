@@ -8,7 +8,8 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-blue-100 z-50 shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
+            <img src="/ltabai logo.jpg" alt="LTAB AI Logo" className="h-10 w-10 object-contain" />
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">LTAB AI</span>
           </div>
 
