@@ -1,4 +1,4 @@
-import { Twitter, Linkedin, Youtube, Mail } from 'lucide-react';
+import { Twitter, Linkedin, Youtube, Mail, Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -36,7 +36,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-white font-semibold mb-4">Connect</h4>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-6">
               <a href="#" className="hover:text-white transition-colors">
                 <Twitter size={20} />
               </a>
@@ -46,8 +46,15 @@ export default function Footer() {
               <a href="#" className="hover:text-white transition-colors">
                 <Youtube size={20} />
               </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <Mail size={20} />
+            </div>
+            <div className="space-y-3 text-sm">
+              <a href="mailto:Contactus@blueantdigitech.com" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Mail size={16} />
+                <span>Contactus@blueantdigitech.com</span>
+              </a>
+              <a href="tel:+916000683808" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Phone size={16} />
+                <span>+91 6000683808</span>
               </a>
             </div>
           </div>
