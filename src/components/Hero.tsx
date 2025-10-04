@@ -64,7 +64,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { value: '175+', label: 'Languages', gradient: 'from-blue-600 to-cyan-500' },
             { value: '24/7', label: 'Availability', gradient: 'from-cyan-500 to-blue-500' },
@@ -73,14 +73,14 @@ export default function Hero() {
           ].map((stat, index) => (
             <div
               key={index}
-              className="group bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-slate-200 hover:border-blue-400 relative overflow-hidden"
+              className="group bg-white p-5 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 border border-slate-200 hover:border-blue-400 relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative z-10">
-                <div className={`text-5xl md:text-6xl font-black bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-3`}>
+                <div className={`text-3xl md:text-4xl font-black bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-2`}>
                   {stat.value}
                 </div>
-                <div className="text-slate-600 font-bold text-sm tracking-wide">{stat.label}</div>
+                <div className="text-slate-600 font-semibold text-xs tracking-wide">{stat.label}</div>
               </div>
             </div>
           ))}
