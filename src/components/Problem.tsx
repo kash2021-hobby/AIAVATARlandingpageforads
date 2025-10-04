@@ -1,20 +1,6 @@
-import { Camera, Clock, DollarSign, Frown, MapPin, Video } from 'lucide-react';
+import { Clock, DollarSign, MapPin, Video, Play } from 'lucide-react';
 
 const problems = [
-  {
-    icon: Camera,
-    title: 'Camera Shy',
-    description: "Don't feel comfortable in front of the camera? You're not alone.",
-    gradient: 'from-red-500 to-orange-500',
-    bgGradient: 'from-red-50 to-orange-50',
-  },
-  {
-    icon: Frown,
-    title: 'Lack of Confidence',
-    description: 'Struggle with on-camera presence and public speaking?',
-    gradient: 'from-orange-500 to-amber-500',
-    bgGradient: 'from-orange-50 to-amber-50',
-  },
   {
     icon: Clock,
     title: 'No Time for Shoots',
@@ -65,7 +51,42 @@ export default function Problem() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="bg-gradient-to-r from-red-50 via-orange-50 to-red-50 rounded-3xl p-8 border-2 border-red-200">
+                <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                  Camera Shy & Lack of Confidence?
+                </h3>
+                <p className="text-xl text-gray-700 leading-relaxed mb-4">
+                  Don't feel comfortable in front of the camera? You're not alone. Many professionals struggle with on-camera presence and public speaking.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  With AI Avatars, you never have to worry about being camera shy again. Create professional content without ever stepping in front of a camera.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-red-500 via-orange-500 to-red-600 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+              <div className="relative bg-gradient-to-r from-red-500 via-orange-500 to-red-600 rounded-2xl p-1">
+                <div className="bg-white rounded-xl p-8">
+                  <div className="aspect-video bg-gradient-to-br from-red-100 via-orange-100 to-red-200 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-24 h-24 bg-gradient-to-r from-red-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 cursor-pointer shadow-2xl">
+                        <Play size={36} className="text-white ml-1" />
+                      </div>
+                      <p className="text-gray-700 font-bold text-lg">AI Avatar Demo Video</p>
+                      <p className="text-gray-500 text-sm mt-2">Video will be added here</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {problems.map((problem, index) => (
             <div
               key={index}
