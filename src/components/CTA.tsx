@@ -37,9 +37,10 @@ export default function CTA() {
           </div>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-8 leading-tight tracking-tight">
-            Ready to Transform
+            Want to Build Your Own{' '}
+            <span className="text-yellow-400">AI AVATAR</span>
             <span className="block bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
-              Your Business?
+              For Your Business?
             </span>
           </h2>
           <p className="text-xl sm:text-2xl text-slate-200 mb-12 font-medium">
