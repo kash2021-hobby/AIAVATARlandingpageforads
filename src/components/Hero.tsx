@@ -39,10 +39,10 @@ export default function Hero() {
               <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform relative z-10" />
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </a>
-            <button className="group border-2 border-slate-300 text-slate-700 bg-white px-10 py-5 rounded-2xl hover:bg-slate-50 hover:shadow-xl hover:scale-105 hover:border-blue-400 transition-all duration-300 font-bold text-lg flex items-center gap-3 w-full sm:w-auto justify-center">
+            <a href="#demo" className="group border-2 border-slate-300 text-slate-700 bg-white px-10 py-5 rounded-2xl hover:bg-slate-50 hover:shadow-xl hover:scale-105 hover:border-blue-400 transition-all duration-300 font-bold text-lg flex items-center gap-3 w-full sm:w-auto justify-center">
               <Play size={22} className="group-hover:scale-110 transition-transform" />
               <span className="tracking-wide">Watch Demo</span>
-            </button>
+            </a>
           </div>
         </div>
 
