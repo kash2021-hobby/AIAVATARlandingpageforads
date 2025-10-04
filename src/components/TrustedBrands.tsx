@@ -22,30 +22,36 @@ const brands = [
 
 export default function TrustedBrands() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-cyan-50 to-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent mb-4">
-            Trusted by Leading Brands
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 mb-6 tracking-tight">
+            Trusted by{' '}
+            <span className="block sm:inline bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-clip-text text-transparent">
+              Leading Brands
+            </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-slate-700 max-w-3xl mx-auto font-medium leading-relaxed">
             We've partnered with industry leaders across multiple sectors to deliver exceptional results
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl text-center hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 border-blue-100"
+              className="group bg-white p-8 rounded-3xl text-center hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-slate-200 hover:border-blue-300 relative overflow-hidden"
             >
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <stat.icon size={24} className="text-white" strokeWidth={2.5} />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <stat.icon size={28} className="text-white" strokeWidth={2.5} />
+                </div>
+                <div className="text-5xl font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-3">
+                  {stat.value}
+                </div>
+                <div className="text-slate-600 font-bold tracking-wide">{stat.label}</div>
               </div>
-              <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">
-                {stat.value}
-              </div>
-              <div className="text-gray-600 font-semibold">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -54,12 +60,12 @@ export default function TrustedBrands() {
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-100 flex items-center justify-center h-24"
+              className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 border-2 border-slate-200 hover:border-blue-300 flex items-center justify-center h-28"
             >
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-70 group-hover:opacity-100"
               />
             </div>
           ))}

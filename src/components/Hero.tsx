@@ -2,60 +2,69 @@ import { ArrowRight, Play, Sparkles, Zap } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZjAwZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE2YzAgMi4yMSAxLjc5IDQgNCA0czQtMS43OSA0LTQtMS43OS00LTQtNC00IDEuNzktNCA0em0tMTYgMGMwIDIuMjEgMS43OSA0IDQgNHM0LTEuNzkgNC00LTEuNzktNC00LTQtNCAxLjc5LTQgNHptMTYgMTZjMCAyLjIxIDEuNzkgNCA0IDRzNC0xLjc5IDQtNC0xLjc5LTQtNC00LTQgMS43OS00IDR6bS0xNiAwYzAgMi4yMSAxLjc5IDQgNCA0czQtMS43OSA0LTQtMS43OS00LTQtNC00IDEuNzktNCA0eiIvPjwvZz48L2c+PC9zdmc+')] opacity-40"></div>
+    <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+        <div className="absolute top-40 right-10 w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+      </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-3 rounded-full text-sm font-semibold mb-6 animate-bounce shadow-lg">
-            <Sparkles size={18} />
-            <span>The Future of Content Creation</span>
-            <Zap size={18} />
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 text-white px-6 py-3 rounded-full text-sm font-bold mb-8 shadow-xl hover:shadow-2xl transition-all duration-300 animate-pulse-slow">
+            <Sparkles size={18} className="animate-spin-slow" />
+            <span className="tracking-wide">The Future of Content Creation</span>
+            <Zap size={18} className="animate-pulse" />
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent">
-              Create Professional Content{' '}
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black mb-8 leading-[1.1] tracking-tight">
+            <span className="block bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent mb-2">
+              Create Professional
             </span>
-            <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-700 bg-clip-text text-transparent animate-gradient">
-              Without Cameras or Actors
+            <span className="block bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent mb-2">
+              Content{' '}
+            </span>
+            <span className="block bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 bg-clip-text text-transparent animate-gradient-slow">
+              Without Cameras
             </span>
           </h1>
 
-          <p className="text-xl sm:text-2xl text-gray-700 mb-10 leading-relaxed">
+          <p className="text-xl sm:text-2xl text-slate-700 mb-12 leading-relaxed max-w-3xl mx-auto font-medium">
             Transform your brand with studio-quality videos, engaging social media content, and amazing voiceovers—all at an affordable price using AI Avatars
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#contact-form" className="group bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 font-bold text-lg flex items-center gap-2 w-full sm:w-auto justify-center relative overflow-hidden">
-              <span className="relative z-10">Start Free Trial</span>
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform relative z-10" />
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+            <a href="#contact-form" className="group bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 text-white px-10 py-5 rounded-2xl hover:shadow-2xl hover:scale-105 transition-all duration-300 font-bold text-lg flex items-center gap-3 w-full sm:w-auto justify-center relative overflow-hidden">
+              <span className="relative z-10 tracking-wide">Start Free Trial</span>
+              <ArrowRight size={22} className="group-hover:translate-x-2 transition-transform relative z-10" />
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </a>
-            <button className="group border-3 border-blue-600 text-blue-700 bg-white px-8 py-4 rounded-xl hover:bg-blue-50 hover:shadow-xl hover:scale-105 transition-all duration-300 font-bold text-lg flex items-center gap-2 w-full sm:w-auto justify-center">
-              <Play size={20} className="group-hover:scale-110 transition-transform" />
-              Watch Demo
+            <button className="group border-2 border-slate-300 text-slate-700 bg-white px-10 py-5 rounded-2xl hover:bg-slate-50 hover:shadow-xl hover:scale-105 hover:border-blue-400 transition-all duration-300 font-bold text-lg flex items-center gap-3 w-full sm:w-auto justify-center">
+              <Play size={22} className="group-hover:scale-110 transition-transform" />
+              <span className="tracking-wide">Watch Demo</span>
             </button>
           </div>
         </div>
 
-        <div className="mt-16 relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-          <div className="relative bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 rounded-2xl p-1">
-            <div className="bg-white rounded-xl p-8 sm:p-12">
-              <div className="aspect-video bg-gradient-to-br from-blue-100 via-cyan-100 to-blue-200 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:scale-110 transition-transform duration-300 cursor-pointer shadow-2xl">
-                    <Play size={36} className="text-white ml-1" />
+        <div className="mt-20 relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
+          <div className="relative bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-3xl p-[3px] shadow-2xl">
+            <div className="bg-white rounded-[22px] p-6 sm:p-10">
+              <div className="aspect-video bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100 rounded-2xl flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 via-transparent to-cyan-500/10"></div>
+                <div className="text-center relative z-10">
+                  <div className="w-28 h-28 bg-gradient-to-br from-blue-600 via-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-500 cursor-pointer shadow-2xl hover:shadow-blue-500/50 group-hover:animate-pulse">
+                    <Play size={40} className="text-white ml-1" />
                   </div>
-                  <p className="text-gray-700 font-bold text-lg">Interactive Avatar Preview</p>
+                  <p className="text-slate-800 font-bold text-xl">Interactive Avatar Preview</p>
+                  <p className="text-slate-500 text-sm mt-2">See AI in action</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { value: '175+', label: 'Languages', gradient: 'from-blue-600 to-cyan-500' },
             { value: '24/7', label: 'Availability', gradient: 'from-cyan-500 to-blue-500' },
@@ -64,19 +73,46 @@ export default function Hero() {
           ].map((stat, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-blue-300"
+              className="group bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-slate-200 hover:border-blue-400 relative overflow-hidden"
             >
-              <div className={`text-5xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-2`}>
-                {stat.value}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className={`text-5xl md:text-6xl font-black bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent mb-3`}>
+                  {stat.value}
+                </div>
+                <div className="text-slate-600 font-bold text-sm tracking-wide">{stat.label}</div>
               </div>
-              <div className="text-gray-600 font-semibold">{stat.label}</div>
             </div>
           ))}
         </div>
       </div>
 
       <style>{`
-        @keyframes gradient {
+        @keyframes blob {
+          0%, 100% {
+            transform: translate(0, 0) scale(1);
+          }
+          33% {
+            transform: translate(30px, -50px) scale(1.1);
+          }
+          66% {
+            transform: translate(-20px, 20px) scale(0.9);
+          }
+        }
+
+        .animate-blob {
+          animation: blob 7s infinite;
+        }
+
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+
+        @keyframes gradient-slow {
           0%, 100% {
             background-position: 0% 50%;
           }
@@ -85,25 +121,35 @@ export default function Hero() {
           }
         }
 
-        .animate-gradient {
+        .animate-gradient-slow {
           background-size: 200% auto;
-          animation: gradient 3s ease infinite;
+          animation: gradient-slow 4s ease infinite;
         }
 
-        @keyframes tilt {
+        @keyframes pulse-slow {
           0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.8;
+          }
+        }
+
+        .animate-pulse-slow {
+          animation: pulse-slow 3s ease-in-out infinite;
+        }
+
+        @keyframes spin-slow {
+          from {
             transform: rotate(0deg);
           }
-          25% {
-            transform: rotate(1deg);
-          }
-          75% {
-            transform: rotate(-1deg);
+          to {
+            transform: rotate(360deg);
           }
         }
 
-        .animate-tilt {
-          animation: tilt 10s infinite linear;
+        .animate-spin-slow {
+          animation: spin-slow 8s linear infinite;
         }
       `}</style>
     </section>
