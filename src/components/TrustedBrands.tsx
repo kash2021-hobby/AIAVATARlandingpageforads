@@ -1,14 +1,9 @@
 const brands = [
-  { name: 'Tata Motors', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/2560px-Tata_logo.svg.png' },
-  { name: 'Yamaha', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Yamaha_Corporation_logo.svg/2560px-Yamaha_Corporation_logo.svg.png' },
-  { name: 'TVS Motors', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TVS_Motor_Company_Logo.svg/2560px-TVS_Motor_Company_Logo.svg.png' },
-  { name: 'First Abu Dhabi Bank', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/FAB_Logo.svg/2560px-FAB_Logo.svg.png' },
-  { name: 'Amazon', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png' },
-  { name: 'Myntra', logo: 'https://constant.myntassets.com/web/assets/img/myntra.png' },
-  { name: 'Flipkart', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flipkart_logo.svg/2560px-Flipkart_logo.svg.png' },
-  { name: 'DermaNext', logo: 'https://via.placeholder.com/200x80/3B82F6/FFFFFF?text=DermaNext' },
-  { name: 'Bene Kleed', logo: 'https://via.placeholder.com/200x80/06B6D4/FFFFFF?text=Bene+Kleed' },
-  { name: 'Minto Bay', logo: 'https://via.placeholder.com/200x80/0284C7/FFFFFF?text=Minto+Bay' },
+  { name: 'Bene Kleed', logo: '/bene kleed.png' },
+  { name: 'DermaNext', logo: '/derma next.jpg' },
+  { name: 'First Abu Dhabi Bank', logo: '/dubai.png' },
+  { name: 'Minto Bay', logo: '/minto bay.png' },
+  { name: 'Myntra', logo: '/myntra.jpg' },
 ];
 
 export default function TrustedBrands() {
