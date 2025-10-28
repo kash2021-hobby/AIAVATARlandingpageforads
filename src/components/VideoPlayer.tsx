@@ -5,9 +5,10 @@ import { Play, Pause, Volume2, VolumeX, Maximize } from 'lucide-react';
 interface VideoPlayerProps {
   url: string;
   className?: string;
+  aspectRatio?: 'landscape' | 'portrait';
 }
 
-export default function VideoPlayer({ url, className = '' }: VideoPlayerProps) {
+export default function VideoPlayer({ url, className = '', aspectRatio = 'landscape' }: VideoPlayerProps) {
   const [playing, setPlaying] = useState(true);
   const [muted, setMuted] = useState(true);
   const [showControls, setShowControls] = useState(false);
