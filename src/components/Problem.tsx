@@ -149,15 +149,16 @@ export default function Problem() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
                 <div className="relative bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 rounded-3xl p-[3px] shadow-2xl">
                   <div className="bg-white rounded-[22px] p-8">
-                    <div className="aspect-[9/16] bg-gradient-to-br from-green-50 via-emerald-50 to-green-100 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-tr from-green-500/10 via-transparent to-emerald-500/10"></div>
-                      <div className="text-center relative z-10 px-4">
-                        <div className="w-24 h-24 bg-gradient-to-br from-green-600 via-emerald-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-500 cursor-pointer shadow-2xl hover:shadow-green-500/50">
-                          <Play size={36} className="text-white ml-1" />
-                        </div>
-                        <p className="text-slate-800 font-bold text-lg">Regional Language Demo</p>
-                        <p className="text-slate-500 text-xs mt-2">Content in your language</p>
-                      </div>
+                    <div className="aspect-[9/16] relative overflow-hidden rounded-2xl">
+                      <iframe
+                        className="w-full h-full rounded-2xl"
+                        src="https://www.youtube.com/embed/_pUj_iRfNI4?si=8xU461BgS43-E2oO&autoplay=1&mute=1&loop=1&playlist=_pUj_iRfNI4&controls=1"
+                        title="Regional Language Demo"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      ></iframe>
                     </div>
                   </div>
                 </div>
