@@ -23,8 +23,8 @@ export default function Demo() {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
             <div className="relative bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-3xl p-[3px] shadow-2xl">
-              <div className="bg-slate-900 rounded-[22px] overflow-hidden">
-                <div className="aspect-video">
+              <div className="bg-slate-900 rounded-[22px] p-2 sm:p-3 overflow-hidden">
+                <div className="aspect-video min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] rounded-2xl overflow-hidden">
                   <VideoPlayer url="https://youtu.be/-4IvCkBdE-I" />
                 </div>
               </div>

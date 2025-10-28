@@ -44,8 +44,8 @@ export default function Problem() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-red-500 via-orange-500 to-red-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
               <div className="relative bg-gradient-to-r from-red-600 via-orange-500 to-red-600 rounded-3xl p-[3px] shadow-2xl">
-                <div className="bg-white rounded-[22px] p-8">
-                  <div className="aspect-video relative overflow-hidden rounded-2xl">
+                <div className="bg-white rounded-[22px] p-2 sm:p-3">
+                  <div className="aspect-video min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] relative overflow-hidden rounded-2xl">
                     <iframe
                       className="w-full h-full rounded-2xl"
                       src="https://www.youtube.com/embed/QmjQon8yHbY?si=i9eM1WfZEj6DzEK_&autoplay=1&mute=1&loop=1&playlist=QmjQon8yHbY&controls=1"
@@ -67,8 +67,8 @@ export default function Problem() {
             <div className="relative group order-2 lg:order-1">
               <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
               <div className="relative bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 rounded-3xl p-[3px] shadow-2xl">
-                <div className="bg-white rounded-[22px] p-8">
-                  <div className="aspect-video relative overflow-hidden rounded-2xl">
+                <div className="bg-white rounded-[22px] p-2 sm:p-3">
+                  <div className="aspect-video min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] relative overflow-hidden rounded-2xl">
                     <iframe
                       className="w-full h-full rounded-2xl"
                       src="https://www.youtube.com/embed/-4IvCkBdE-I?si=Ney1IexwewWjEibJ&autoplay=1&mute=1&loop=1&playlist=-4IvCkBdE-I&controls=1"
@@ -124,8 +124,8 @@ export default function Problem() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
               <div className="relative bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-3xl p-[3px] shadow-2xl">
-                <div className="bg-white rounded-[22px] p-8">
-                  <div className="aspect-video relative overflow-hidden rounded-2xl">
+                <div className="bg-white rounded-[22px] p-2 sm:p-3">
+                  <div className="aspect-video min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] relative overflow-hidden rounded-2xl">
                     <iframe
                       className="w-full h-full rounded-2xl"
                       src="https://www.youtube.com/embed/-4IvCkBdE-I?si=v8ZefzS6acJ5inoJ&autoplay=1&mute=1&loop=1&playlist=-4IvCkBdE-I&controls=1"
@@ -147,8 +147,8 @@ export default function Problem() {
             <div className="relative group order-2 lg:order-1">
               <div className="absolute -inset-1 bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
               <div className="relative bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 rounded-3xl p-[3px] shadow-2xl">
-                <div className="bg-white rounded-[22px] p-8">
-                  <div className="aspect-video bg-gradient-to-br from-green-50 via-emerald-50 to-green-100 rounded-2xl flex items-center justify-center relative overflow-hidden">
+                <div className="bg-white rounded-[22px] p-2 sm:p-3">
+                  <div className="aspect-video min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] bg-gradient-to-br from-green-50 via-emerald-50 to-green-100 rounded-2xl flex items-center justify-center relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-tr from-green-500/10 via-transparent to-emerald-500/10"></div>
                     <div className="text-center relative z-10">
                       <div className="w-28 h-28 bg-gradient-to-br from-green-600 via-emerald-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-500 cursor-pointer shadow-2xl hover:shadow-green-500/50">
