@@ -125,15 +125,16 @@ export default function Problem() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
               <div className="relative bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-3xl p-[3px] shadow-2xl">
                 <div className="bg-white rounded-[22px] p-8">
-                  <div className="aspect-video bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 via-transparent to-cyan-500/10"></div>
-                    <div className="text-center relative z-10">
-                      <div className="w-28 h-28 bg-gradient-to-br from-blue-600 via-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-500 cursor-pointer shadow-2xl hover:shadow-blue-500/50">
-                        <Play size={40} className="text-white ml-1" />
-                      </div>
-                      <p className="text-slate-800 font-bold text-xl">AI Avatar Demo Video</p>
-                      <p className="text-slate-500 text-sm mt-2">Affordable quality content</p>
-                    </div>
+                  <div className="aspect-video relative overflow-hidden rounded-2xl">
+                    <iframe
+                      className="w-full h-full rounded-2xl"
+                      src="https://www.youtube.com/embed/-4IvCkBdE-I?si=v8ZefzS6acJ5inoJ&loop=1&playlist=-4IvCkBdE-I&controls=1"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    ></iframe>
                   </div>
                 </div>
               </div>
