@@ -8,12 +8,12 @@ interface VideoPlayerProps {
   aspectRatio?: 'landscape' | 'portrait';
 }
 
-export default function VideoPlayer({ url, className = '', aspectRatio = 'landscape' }: VideoPlayerProps) {
+export default function VideoPlayer({ url, className = '' }: VideoPlayerProps) {
   const [playing, setPlaying] = useState(true);
   const [muted, setMuted] = useState(true);
   const [showControls, setShowControls] = useState(false);
   const [progress, setProgress] = useState(0);
-  const playerRef = useRef<ReactPlayer>(null);
+  const playerRef = useRef<any>(null);
 
   const handlePlayPause = () => {
     setPlaying(!playing);
@@ -51,32 +51,33 @@ export default function VideoPlayer({ url, className = '', aspectRatio = 'landsc
       className={`relative rounded-3xl overflow-hidden group ${className}`}
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => setShowControls(false)}
+      style={{ width: '100%', height: '100%' }}
     >
-      <ReactPlayer
-        ref={playerRef}
-        url={url}
-        playing={playing}
-        loop={true}
-        muted={muted}
-        width="100%"
-        height="100%"
-        playsinline={true}
-        config={{
-          youtube: {
-            playerVars: {
-              autoplay: 1,
-              controls: 0,
-              modestbranding: 1,
-              showinfo: 0,
-              rel: 0,
-              disablekb: 1,
-              fs: 0,
-              iv_load_policy: 3,
-            },
-          },
-        }}
-        onProgress={handleProgress}
-      />
+      <div className="absolute inset-0">
+        {/* @ts-ignore */}
+        <ReactPlayer
+          ref={playerRef}
+          url={url}
+          playing={playing}
+          loop={true}
+          muted={muted}
+          width="100%"
+          height="100%"
+          playsinline={true}
+          style={{ position: 'absolute', top: 0, left: 0 }}
+          onProgress={handleProgress}
+          config={{
+            youtube: {
+              playerVars: {
+                autoplay: 1,
+                controls: 0,
+                modestbranding: 1,
+                rel: 0
+              }
+            }
+          }}
+        />
+      </div>
 
       <div
         className={`absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-300 ${

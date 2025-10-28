@@ -25,8 +25,8 @@ export default function RegionalLanguageDemo() {
             <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-500 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
             <div className="relative bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-600 rounded-3xl p-[3px] shadow-2xl">
               <div className="bg-slate-900 rounded-[22px] overflow-hidden">
-                <div className="aspect-[9/16]">
-                  <VideoPlayer url="https://youtube.com/shorts/_pUj_iRfNI4?si=1-xtSaluhVZ_hAht" aspectRatio="portrait" />
+                <div className="aspect-[9/16] relative">
+                  <VideoPlayer url="https://www.youtube.com/watch?v=_pUj_iRfNI4" aspectRatio="portrait" />
                 </div>
               </div>
             </div>
