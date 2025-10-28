@@ -1,4 +1,5 @@
 import { Play, Sparkles } from 'lucide-react';
+import VideoPlayer from './VideoPlayer';
 
 export default function Demo() {
   return (
@@ -23,11 +24,8 @@ export default function Demo() {
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
             <div className="relative bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-3xl p-[3px] shadow-2xl">
               <div className="bg-slate-900 rounded-[22px] overflow-hidden">
-                <div className="aspect-video flex items-center justify-center bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 via-transparent to-cyan-500/20"></div>
-                  <button className="w-28 h-28 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-2xl relative z-10 group-hover:shadow-blue-500/50">
-                    <Play size={40} className="text-blue-600 ml-1" />
-                  </button>
+                <div className="aspect-video">
+                  <VideoPlayer url="https://youtu.be/-4IvCkBdE-I" />
                 </div>
               </div>
             </div>
