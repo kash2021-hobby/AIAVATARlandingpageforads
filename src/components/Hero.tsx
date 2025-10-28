@@ -49,8 +49,8 @@ export default function Hero() {
         <div className="mt-20 relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-1000"></div>
           <div className="relative bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-3xl p-[3px] shadow-2xl">
-            <div className="bg-white rounded-[22px] p-2 sm:p-3">
-              <div className="aspect-video min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] relative overflow-hidden rounded-2xl">
+            <div className="bg-white rounded-[22px] p-6 sm:p-10">
+              <div className="aspect-video relative overflow-hidden rounded-2xl">
                 <iframe
                   className="w-full h-full rounded-2xl"
                   src="https://www.youtube.com/embed/ZyRaqNkP5pY?si=wTHXczcd861n7OLY&autoplay=1&mute=1&loop=1&playlist=ZyRaqNkP5pY&controls=1"

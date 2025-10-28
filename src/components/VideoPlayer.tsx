@@ -37,7 +37,7 @@ export default function VideoPlayer({ url, className = '' }: VideoPlayerProps) {
     <div className={`relative w-full h-full ${className}`}>
       <iframe
         src={embedUrl}
-        className="absolute inset-0 w-full h-full rounded-2xl"
+        className="absolute inset-0 w-full h-full"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         style={{ border: 'none' }}
