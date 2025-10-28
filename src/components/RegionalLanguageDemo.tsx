@@ -26,7 +26,7 @@ export default function RegionalLanguageDemo() {
             <div className="relative bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-600 rounded-3xl p-[3px] shadow-2xl">
               <div className="bg-slate-900 rounded-[22px] overflow-hidden">
                 <div className="aspect-[9/16]">
-                  <VideoPlayer url="https://youtube.com/shorts/_pUj_iRfNI4" aspectRatio="portrait" />
+                  <VideoPlayer url="https://youtube.com/shorts/_pUj_iRfNI4?si=1-xtSaluhVZ_hAht" aspectRatio="portrait" />
                 </div>
               </div>
             </div>
