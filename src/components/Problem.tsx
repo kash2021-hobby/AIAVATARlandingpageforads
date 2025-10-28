@@ -48,7 +48,7 @@ export default function Problem() {
                   <div className="aspect-video relative overflow-hidden rounded-2xl">
                     <iframe
                       className="w-full h-full rounded-2xl"
-                      src="https://www.youtube.com/embed/QmjQon8yHbY?si=i9eM1WfZEj6DzEK_&loop=1&playlist=QmjQon8yHbY&controls=1"
+                      src="https://www.youtube.com/embed/QmjQon8yHbY?si=i9eM1WfZEj6DzEK_&autoplay=1&mute=1&loop=1&playlist=QmjQon8yHbY&controls=1"
                       title="YouTube video player"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -71,7 +71,7 @@ export default function Problem() {
                   <div className="aspect-video relative overflow-hidden rounded-2xl">
                     <iframe
                       className="w-full h-full rounded-2xl"
-                      src="https://www.youtube.com/embed/-4IvCkBdE-I?si=Ney1IexwewWjEibJ&loop=1&playlist=-4IvCkBdE-I&controls=1"
+                      src="https://www.youtube.com/embed/-4IvCkBdE-I?si=Ney1IexwewWjEibJ&autoplay=1&mute=1&loop=1&playlist=-4IvCkBdE-I&controls=1"
                       title="YouTube video player"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -128,7 +128,7 @@ export default function Problem() {
                   <div className="aspect-video relative overflow-hidden rounded-2xl">
                     <iframe
                       className="w-full h-full rounded-2xl"
-                      src="https://www.youtube.com/embed/-4IvCkBdE-I?si=v8ZefzS6acJ5inoJ&loop=1&playlist=-4IvCkBdE-I&controls=1"
+                      src="https://www.youtube.com/embed/-4IvCkBdE-I?si=v8ZefzS6acJ5inoJ&autoplay=1&mute=1&loop=1&playlist=-4IvCkBdE-I&controls=1"
                       title="YouTube video player"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
