@@ -126,7 +126,7 @@ export default function Demo() {
                         />
                       ) : video.title === 'Healthcare Information' ? (
                         <img
-                          src="/Healthcare Information.webp"
+                          src="/Healthcare Information.png"
                           alt="Healthcare Information"
                           className="w-full h-full object-cover"
                         />
