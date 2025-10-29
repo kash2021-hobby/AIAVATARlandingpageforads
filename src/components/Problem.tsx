@@ -126,15 +126,11 @@ export default function Problem() {
               <div className="relative bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-3xl p-[3px] shadow-2xl">
                 <div className="bg-white rounded-[22px] p-8">
                   <div className="aspect-video relative overflow-hidden rounded-2xl">
-                    <iframe
-                      className="w-full h-full rounded-2xl"
-                      src="https://www.youtube.com/embed/-4IvCkBdE-I?si=v8ZefzS6acJ5inoJ&autoplay=1&mute=1&loop=1&playlist=-4IvCkBdE-I&controls=1"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    ></iframe>
+                    <img
+                      src="/Tight Budget & Expensive Equipment.webp"
+                      alt="Tight Budget & Expensive Equipment - Professional video production costs illustration"
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
                   </div>
                 </div>
               </div>
