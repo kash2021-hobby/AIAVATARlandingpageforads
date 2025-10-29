@@ -138,7 +138,7 @@ export default function Demo() {
                         />
                       ) : video.title === 'Travel & Tourism' ? (
                         <img
-                          src="/Travel & Tourism.webp"
+                          src="/ChatGPT Image Oct 29, 2025, 12_21_49 PM.png"
                           alt="Travel & Tourism"
                           className="w-full h-full object-cover"
                         />
