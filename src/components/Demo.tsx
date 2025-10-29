@@ -108,7 +108,7 @@ export default function Demo() {
                     <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center relative overflow-hidden">
                       {video.title === 'E-Commerce Product Demo' ? (
                         <img
-                          src="/E-Commerce Product Demo.webp"
+                          src="/E-Commerce Product Demo.png"
                           alt="E-Commerce Product Demo"
                           className="w-full h-full object-cover"
                         />
