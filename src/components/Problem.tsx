@@ -82,6 +82,9 @@ export default function Problem() {
                       allowFullScreen
                     ></iframe>
                   </div>
+                  <p className="text-red-600 text-sm font-semibold mt-4 text-center">
+                    *Watch the complete video in youtube.
+                  </p>
                 </div>
               </div>
             </div>
@@ -135,6 +138,9 @@ export default function Problem() {
                       className="w-full h-full object-cover rounded-2xl"
                     />
                   </div>
+                  <p className="text-red-600 text-sm font-semibold mt-4 text-center">
+                    *Watch the complete video in youtube.
+                  </p>
                 </div>
               </div>
             </div>
@@ -159,6 +165,9 @@ export default function Problem() {
                         allowFullScreen
                       ></iframe>
                     </div>
+                    <p className="text-red-600 text-sm font-semibold mt-4 text-center">
+                      *Watch the complete video in youtube.
+                    </p>
                   </div>
                 </div>
               </div>
