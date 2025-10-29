@@ -106,10 +106,20 @@ export default function Demo() {
                 <div className={`relative bg-gradient-to-r ${video.gradient} rounded-3xl p-[2px] shadow-xl`}>
                   <div className="bg-white rounded-[22px] overflow-hidden">
                     <div className="aspect-video bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-tr from-black/5 via-transparent to-black/5"></div>
-                      <button className="w-20 h-20 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-xl relative z-10 group-hover:shadow-2xl">
-                        <Play size={32} className={`bg-gradient-to-r ${video.gradient} bg-clip-text text-transparent ml-1`} />
-                      </button>
+                      {video.title === 'E-Commerce Product Demo' ? (
+                        <img
+                          src="/E-Commerce Product Demo.webp"
+                          alt="E-Commerce Product Demo"
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <>
+                          <div className="absolute inset-0 bg-gradient-to-tr from-black/5 via-transparent to-black/5"></div>
+                          <button className="w-20 h-20 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-xl relative z-10 group-hover:shadow-2xl">
+                            <Play size={32} className={`bg-gradient-to-r ${video.gradient} bg-clip-text text-transparent ml-1`} />
+                          </button>
+                        </>
+                      )}
                     </div>
                     <div className="p-6 bg-white">
                       <div className={`inline-block bg-gradient-to-r ${video.gradient} text-white px-4 py-1 rounded-full text-xs font-bold mb-3`}>
