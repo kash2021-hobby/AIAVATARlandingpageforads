@@ -56,6 +56,9 @@ export default function Problem() {
                       allowFullScreen
                     ></iframe>
                   </div>
+                  <p className="text-red-600 text-sm font-semibold mt-4 text-center">
+                    *Watch the complete video in youtube.
+                  </p>
                 </div>
               </div>
             </div>
