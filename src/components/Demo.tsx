@@ -114,7 +114,7 @@ export default function Demo() {
                         />
                       ) : video.title === 'Educational Tutorial' ? (
                         <img
-                          src="/Screenshot 2025-10-29 110016.png"
+                          src="/Educational Tutorial.png"
                           alt="Educational Tutorial"
                           className="w-full h-full object-cover"
                         />
