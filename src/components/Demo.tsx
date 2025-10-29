@@ -124,6 +124,12 @@ export default function Demo() {
                           alt="Real Estate Tour"
                           className="w-full h-full object-cover"
                         />
+                      ) : video.title === 'Healthcare Information' ? (
+                        <img
+                          src="/Healthcare Information.webp"
+                          alt="Healthcare Information"
+                          className="w-full h-full object-cover"
+                        />
                       ) : (
                         <>
                           <div className="absolute inset-0 bg-gradient-to-tr from-black/5 via-transparent to-black/5"></div>
