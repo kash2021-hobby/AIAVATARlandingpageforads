@@ -132,7 +132,7 @@ export default function Demo() {
                         />
                       ) : video.title === 'Financial Services' ? (
                         <img
-                          src="/Financial Services.webp"
+                          src="/Financial Services.png"
                           alt="Financial Services"
                           className="w-full h-full object-cover"
                         />
