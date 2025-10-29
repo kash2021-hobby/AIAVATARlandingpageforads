@@ -1,47 +1,74 @@
+import { useRef, useState } from 'react';
+import ReactPlayer from 'react-player';
+import { Volume2, VolumeX } from 'lucide-react';
+
 interface VideoPlayerProps {
   url: string;
   className?: string;
   aspectRatio?: 'landscape' | 'portrait';
 }
 
-function getYouTubeVideoId(url: string): string | null {
-  const patterns = [
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/,
-    /youtube\.com\/embed\/([^&\n?#]+)/,
-  ];
-
-  for (const pattern of patterns) {
-    const match = url.match(pattern);
-    if (match) {
-      return match[1];
-    }
-  }
-
-  return null;
-}
-
 export default function VideoPlayer({ url, className = '' }: VideoPlayerProps) {
-  const videoId = getYouTubeVideoId(url);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
+  const [isHovering, setIsHovering] = useState(false);
+  const playerRef = useRef<ReactPlayer>(null);
 
-  if (!videoId) {
-    return (
-      <div className={`flex items-center justify-center bg-slate-800 ${className}`}>
-        <p className="text-white">Invalid YouTube URL</p>
-      </div>
-    );
-  }
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+    setIsPlaying(true);
+  };
 
-  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=1&modestbranding=1&rel=0&playsinline=1`;
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+    setIsPlaying(false);
+  };
+
+  const toggleMute = () => {
+    setIsMuted(!isMuted);
+  };
 
   return (
-    <div className={`relative w-full h-full ${className}`}>
-      <iframe
-        src={embedUrl}
-        className="absolute inset-0 w-full h-full"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        style={{ border: 'none' }}
+    <div
+      className={`relative w-full h-full ${className}`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <ReactPlayer
+        ref={playerRef}
+        url={url}
+        playing={isPlaying}
+        muted={isMuted}
+        loop={true}
+        width="100%"
+        height="100%"
+        controls={false}
+        config={{
+          youtube: {
+            playerVars: {
+              modestbranding: 1,
+              rel: 0,
+              showinfo: 0,
+            }
+          }
+        }}
       />
+
+      {isHovering && (
+        <button
+          onClick={toggleMute}
+          className="absolute bottom-4 right-4 bg-slate-900/80 hover:bg-slate-900 text-white p-3 rounded-full transition-all duration-300 hover:scale-110 backdrop-blur-sm z-10"
+          aria-label={isMuted ? 'Unmute' : 'Mute'}
+        >
+          {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+        </button>
+      )}
+
+      {isHovering && isMuted && (
+        <div className="absolute top-4 left-4 right-4 bg-slate-900/80 text-white px-4 py-2 rounded-lg text-sm font-medium backdrop-blur-sm z-10 animate-fade-in">
+          Click the sound icon to enable audio
+        </div>
+      )}
     </div>
   );
 }
