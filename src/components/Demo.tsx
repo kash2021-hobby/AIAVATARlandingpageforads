@@ -112,6 +112,12 @@ export default function Demo() {
                           alt="E-Commerce Product Demo"
                           className="w-full h-full object-cover"
                         />
+                      ) : video.title === 'Educational Tutorial' ? (
+                        <img
+                          src="/Screenshot 2025-10-29 110016.png"
+                          alt="Educational Tutorial"
+                          className="w-full h-full object-cover"
+                        />
                       ) : (
                         <>
                           <div className="absolute inset-0 bg-gradient-to-tr from-black/5 via-transparent to-black/5"></div>
