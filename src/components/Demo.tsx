@@ -136,6 +136,12 @@ export default function Demo() {
                           alt="Financial Services"
                           className="w-full h-full object-cover"
                         />
+                      ) : video.title === 'Travel & Tourism' ? (
+                        <img
+                          src="/Travel & Tourism.webp"
+                          alt="Travel & Tourism"
+                          className="w-full h-full object-cover"
+                        />
                       ) : (
                         <>
                           <div className="absolute inset-0 bg-gradient-to-tr from-black/5 via-transparent to-black/5"></div>
